@@ -1,0 +1,19 @@
+language: bash
+services: docker
+
+cache:
+  directories:
+   - /home/travis/.cache/pip/
+
+script:
+  - set -e
+  - wget -qO- https://api.anaxexp.com/api/v1/get/cli | sh
+  - anaxexp ci init "${ANAXEXP_INSTANCE_UUID}"
+
+  - >
+    anaxexp ci run -v $HOME/.cache/pip:/home/anaxexp/.cache/pip -i anaxexp/python:3.6 -- \
+      sh -c "pip install mkdocs-material markdown-include && mkdocs build"
+
+  - anaxexp ci build --from ./site
+  - anaxexp ci release
+  - anaxexp ci deploy
