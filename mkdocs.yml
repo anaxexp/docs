@@ -1,7 +1,7 @@
 site_name: AnaxExp documentation
 site_description: AnaxExp documentation
-site_author: AnaxExp, Inc.
-site_url: https://docs.anaxexp.com
+site_author: AnaxExp, LLC.
+site_url: https://anaxexp.github.io/docs
 
 repo_name: anaxexp/docs
 repo_url: https://github.com/anaxexp/docs
