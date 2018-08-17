@@ -2,7 +2,7 @@
 
 ## Step 1 – choose stack and destination server/cluster
 
-![](../assets/new-app-1.png)​
+![](http://via.placeholder.com/640x360)​
 ​
 Select one of your connected servers or Demo server by AnaxExp where you want to deploy your applications. 
 
@@ -15,7 +15,7 @@ Some stacks may provide optional services (e.g. redis as cache storage) that you
 
 ## Step 2 – configure your application instance
 ​
-![](../assets/new-app-2.png)​
+![](http://via.placeholder.com/640x360)​
 ​
 Enter the name of your application and select the instance type (Dev by default). Your application hostname will be automatically generated based on the name, you can optionally adjust it. You can change all these settings later after initial deployment. 
 

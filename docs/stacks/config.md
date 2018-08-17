@@ -2,7 +2,7 @@
 
 You can customize stacks for specific application instance by configuring stack services via environment variables. Go to `Instance > Stack`, find a service you'd like to customize and click on a cogwheel icon. 
 
-![](../assets/service-config.png)
+![](http://via.placeholder.com/640x360)
 
 In a modal window you can edit environment variables for this service, disable it (available only for optional services) and manage # of replicas.
 
