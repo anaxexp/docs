@@ -1,0 +1,1898 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="AnaxExp documentation">
+      
+      
+        <link rel="canonical" href="https://anaxexp.github.io/docs/apps/deploy/">
+      
+      
+        <meta name="author" content="AnaxExp, LLC.">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.1, mkdocs-material-3.0.3">
+    
+    
+      
+        <title>Deployment - AnaxExp documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../../assets/anaxexp.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../../#code-deployment" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://anaxexp.github.io/docs" title="AnaxExp documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                AnaxExp documentation
+
+                <span class="stack-page-link-wrapper">
+                  <a href="https://anaxexp.com/stacks" class="stack-page-link" target="_blank">
+                    Browse stacks
+                  </a>
+                </span>
+              </span>
+              <span class="md-header-nav__topic">
+                Deployment
+              </span>
+            
+          
+        </div>
+      </div>
+
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+
+      
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="md-header-nav__source">
+          
+
+
+  
+
+
+  <a href="https://github.com/anaxexp/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      anaxexp/docs
+    </div>
+  </a>
+
+        </div>
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+      
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="Home" class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../new/" title="Apps" class="md-tabs__link md-tabs__link--active">
+          Apps
+        </a>
+      
+    </li>
+  
+
+      
+      
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../infrastructure/" title="Infrastructure" class="md-tabs__link">
+          Infrastructure
+        </a>
+      
+    </li>
+  
+
+      
+      
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../stacks/" title="Stacks" class="md-tabs__link">
+          Stacks
+        </a>
+      
+    </li>
+  
+
+      
+      
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../integrations/aws/" title="Integrations" class="md-tabs__link">
+          Integrations
+        </a>
+      
+    </li>
+  
+
+      
+      
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../cluster/" title="Cluster" class="md-tabs__link">
+          Cluster
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://anaxexp.github.io/docs" title="AnaxExp documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    AnaxExp documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/anaxexp/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      anaxexp/docs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../billing/" title="Billing" class="md-nav__link">
+      Billing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../dev/" title="Development" class="md-nav__link">
+      Development
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../faq/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../status/" title="Status" class="md-nav__link">
+      Status
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../support/" title="Support" class="md-nav__link">
+      Support
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../roles/" title="User roles" class="md-nav__link">
+      User roles
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" checked>
+    
+    <label class="md-nav__link" for="nav-9">
+      Apps
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Apps
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../new/" title="New app" class="md-nav__link">
+      New app
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../instances/" title="Instances" class="md-nav__link">
+      Instances
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Deployment
+      </label>
+    
+    <a href="./" title="Deployment" class="md-nav__link md-nav__link--active">
+      Deployment
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#direct-git-deployments" title="Direct git deployments" class="md-nav__link">
+    Direct git deployments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cicd" title="CI/CD" class="md-nav__link">
+    CI/CD
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anaxexp-ci" title="AnaxExp CI" class="md-nav__link">
+    AnaxExp CI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#via-third-party-ci" title="Via third-party CI" class="md-nav__link">
+    Via third-party CI
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anaxexp-cli" title="AnaxExp CLI" class="md-nav__link">
+    AnaxExp CLI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#init" title="Init" class="md-nav__link">
+    Init
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build" title="Build" class="md-nav__link">
+    Build
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#release" title="Release" class="md-nav__link">
+    Release
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy" title="Deploy" class="md-nav__link">
+    Deploy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" title="Examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../domains/" title="Domains" class="md-nav__link">
+      Domains
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../backups/" title="Backups" class="md-nav__link">
+      Backups
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../logs/" title="Logging" class="md-nav__link">
+      Logging
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../post-deployment-scripts/" title="Post-deployment scripts" class="md-nav__link">
+      Post-deployment scripts
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Infrastructure
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        Infrastructure
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../infrastructure/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../infrastructure/connecting-server/" title="Connecting server" class="md-nav__link">
+      Connecting server
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../infrastructure/containers/" title="Containers" class="md-nav__link">
+      Containers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../infrastructure/monitoring/" title="Monitoring" class="md-nav__link">
+      Monitoring
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../infrastructure/env-vars/" title="Environment variables" class="md-nav__link">
+      Environment variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../infrastructure/disk/" title="Disk" class="md-nav__link">
+      Disk
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../infrastructure/maintenance/" title="Maintenance" class="md-nav__link">
+      Maintenance
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../infrastructure/security/" title="Security" class="md-nav__link">
+      Security
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../infrastructure/hsts/" title="HSTS" class="md-nav__link">
+      HSTS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../infrastructure/ufw/" title="UFW" class="md-nav__link">
+      UFW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../infrastructure/cli/" title="CLI" class="md-nav__link">
+      CLI
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      Stacks
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        Stacks
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/config/" title="Configuration" class="md-nav__link">
+      Configuration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/template/" title="Template" class="md-nav__link">
+      Template
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/maintenance/" title="Maintenance" class="md-nav__link">
+      Maintenance
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-5" type="checkbox" id="nav-11-5">
+    
+    <label class="md-nav__link" for="nav-11-5">
+      Drupal
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-11-5">
+        Drupal
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/drupal/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/drupal/containers/" title="Containers" class="md-nav__link">
+      Containers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/drupal/local/" title="Local environment" class="md-nav__link">
+      Local environment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/drupal/changelog/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-6" type="checkbox" id="nav-11-6">
+    
+    <label class="md-nav__link" for="nav-11-6">
+      WordPress
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-11-6">
+        WordPress
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/wordpress/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/wordpress/containers/" title="Containers" class="md-nav__link">
+      Containers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/wordpress/local/" title="Local environment" class="md-nav__link">
+      Local environment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/wordpress/changelog/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-7" type="checkbox" id="nav-11-7">
+    
+    <label class="md-nav__link" for="nav-11-7">
+      PHP
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-11-7">
+        PHP
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/php/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/php/containers/" title="Containers" class="md-nav__link">
+      Containers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/php/local/" title="Local environment" class="md-nav__link">
+      Local environment
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-8" type="checkbox" id="nav-11-8">
+    
+    <label class="md-nav__link" for="nav-11-8">
+      GitLab
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-11-8">
+        GitLab
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/gitlab/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/gitlab/changelog/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/html/" title="HTML" class="md-nav__link">
+      HTML
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/matomo/" title="Matomo" class="md-nav__link">
+      Matomo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/cachet/" title="Cachet" class="md-nav__link">
+      Cachet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/mariadb/" title="MariaDB" class="md-nav__link">
+      MariaDB
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/postgres/" title="PostgreSQL" class="md-nav__link">
+      PostgreSQL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/solr/" title="Solr" class="md-nav__link">
+      Solr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/solr-drupal/" title="Solr for Drupal" class="md-nav__link">
+      Solr for Drupal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/opensmtpd/" title="OpenSMTPD" class="md-nav__link">
+      OpenSMTPD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/elasticsearch/" title="Elasticsearch" class="md-nav__link">
+      Elasticsearch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/athenapdf/" title="AthenaPDF" class="md-nav__link">
+      AthenaPDF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/redis/" title="Redis" class="md-nav__link">
+      Redis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/varnish/" title="Varnish" class="md-nav__link">
+      Varnish
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/jenkins/" title="Jenkins" class="md-nav__link">
+      Jenkins
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/docker-registry/" title="Docker registry" class="md-nav__link">
+      Docker registry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../stacks/slackin/" title="Slackin" class="md-nav__link">
+      Slackin
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      Integrations
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        Integrations
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../integrations/aws/" title="AWS" class="md-nav__link">
+      AWS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../integrations/azure/" title="Azure" class="md-nav__link">
+      Azure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../integrations/bitbucket/" title="BitBucket" class="md-nav__link">
+      BitBucket
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../integrations/cloudflare/" title="CloudFlare" class="md-nav__link">
+      CloudFlare
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../integrations/digitalocean/" title="DigitalOcean" class="md-nav__link">
+      DigitalOcean
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../integrations/docker-registry/" title="Docker registry" class="md-nav__link">
+      Docker registry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../integrations/gcp/" title="GCP" class="md-nav__link">
+      GCP
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../integrations/github/" title="GitHub" class="md-nav__link">
+      GitHub
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../integrations/gitlab/" title="GitLab" class="md-nav__link">
+      GitLab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../integrations/linode/" title="Linode" class="md-nav__link">
+      Linode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../integrations/sendgrid/" title="SendGrid" class="md-nav__link">
+      SendGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../integrations/custom/" title="Custom provider" class="md-nav__link">
+      Custom provider
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+    
+    <label class="md-nav__link" for="nav-13">
+      Cluster
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-13">
+        Cluster
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cluster/" title="Kubernetes cluster" class="md-nav__link">
+      Kubernetes cluster
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#direct-git-deployments" title="Direct git deployments" class="md-nav__link">
+    Direct git deployments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cicd" title="CI/CD" class="md-nav__link">
+    CI/CD
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anaxexp-ci" title="AnaxExp CI" class="md-nav__link">
+    AnaxExp CI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#via-third-party-ci" title="Via third-party CI" class="md-nav__link">
+    Via third-party CI
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anaxexp-cli" title="AnaxExp CLI" class="md-nav__link">
+    AnaxExp CLI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#init" title="Init" class="md-nav__link">
+    Init
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build" title="Build" class="md-nav__link">
+    Build
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#release" title="Release" class="md-nav__link">
+    Release
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy" title="Deploy" class="md-nav__link">
+    Deploy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" title="Examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/anaxexp/docs/edit/master/docs/apps/deploy.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="code-deployment">Code deployment<a class="headerlink" href="#code-deployment" title="Permanent link">&para;</a></h1>
+<h2 id="direct-git-deployments">Direct git deployments<a class="headerlink" href="#direct-git-deployments" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Only for Drupal and WP</p>
+<p>Direct git deployment is available only for <a href="../../stacks/drupal/">Drupal</a> and <a href="../../stacks/wordpress/">WordPress</a> stacks and their forks</p>
+</div>
+<p>You can connect your git repository to AnaxExp and use it as a codebase source for your applications. On code deployment we will perform pull from the target branch and run <a href="../post-deployment-scripts/">post-deployment scripts</a> (if enabled). </p>
+<p>Additionally, you can run deployment automatically every time you push code to a git branch (all instances using this branch will be deployed):</p>
+<ol>
+<li>Configure git hooks for your git repository </li>
+<li>Navigate to <code>Instance &gt; Deployment &gt; Settings</code> and check <code>Automatic deploy</code> option</li>
+</ol>
+<p>For details instructions how to connect a repository and configure hooks see the following articles:</p>
+<ul>
+<li><a href="../../integrations/github/">GitHub</a> </li>
+<li><a href="../../integrations/bitbucket/">BitBucket</a> </li>
+<li><a href="../../integrations/gitlab/">GitLab</a> </li>
+<li><a href="../../integrations/custom/">Custom git provider</a> </li>
+</ul>
+<h2 id="cicd">CI/CD<a class="headerlink" href="#cicd" title="Permanent link">&para;</a></h2>
+<p>Sometimes direct git integration may not be enough for a few reasons:</p>
+<ul>
+<li>Build stage is a must have for repositories with dependencies (e.g. npm, composer)</li>
+<li>You need to run tests</li>
+<li>Direct git deployment cannot be used for custom stacks and cluster deployments</li>
+<li>With CI/CD you have build artifacts like docker images that you can download locally</li>
+<li>With CI/CD you can rollback build (feature TBA)</li>
+</ul>
+<h3 id="anaxexp-ci">AnaxExp CI<a class="headerlink" href="#anaxexp-ci" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Coming soon</p>
+<p>We plan to replace direct git integration with our built-in CI system</p>
+</div>
+<h3 id="via-third-party-ci">Via third-party CI<a class="headerlink" href="#via-third-party-ci" title="Permanent link">&para;</a></h3>
+<p>You can set up CI/CD workflow for your application by integrating AnaxExp with third-party CI tools. Build can be performed on any CI tools with AnaxExp CLI. </p>
+<p>Big picture:</p>
+<ol>
+<li>Deploy an app based on a managed stack that supports CI deployments or custom stack with at least one service having <a href="../../stacks/template/#deployment"><code>deployment.type=ci</code></a></li>
+<li><a href="#anaxexp-cli">Get</a> AnaxExp CLI tool or its docker image</li>
+<li><a href="#init">Initialize</a> the build by providing your AnaxExp API key and UUID of your app instance</li>
+<li><a href="#build">Build</a> images with your codebase. Images will be based on the images from your stack</li>
+<li>Push (<a href="#release">release</a>) images to a private docker registry we provide you (or any other registry)</li>
+<li><a href="#deploy">Deploy</a> the build (a set of images) to your app instance</li>
+</ol>
+<h4 id="anaxexp-cli">AnaxExp CLI<a class="headerlink" href="#anaxexp-cli" title="Permanent link">&para;</a></h4>
+<div class="admonition tldr">
+<p class="admonition-title">VM-based builds over docker-in-docker</p>
+<p>If your CI tool can run builds both in Docker and Virtual Machine (docker daemon must be available) we recommend using the latter because it's faster</p>
+</div>
+<p>You can install the latest stable AnaxExp CLI (Linux amd64) tool during the build like this:</p>
+<div class="codehilite"><pre><span></span>wget -qO- https://api.anaxexp.com/api/v1/get/cli <span class="p">|</span> sh
+</pre></div>
+
+<p>If you want to install it locally for other systems such as macOS or Windows, or install a specific version follow the instructions at <a href="https://github.com/anaxexp/anaxexp-cli">https://github.com/anaxexp/anaxexp-cli</a></p>
+<p>Or you can use <a href="https://hub.docker.com/r/anaxexp/anaxexp-cli/"><code>anaxexp/anaxexp-cli</code></a> docker image if your CI supports only docker-based builds</p>
+<h4 id="init">Init<a class="headerlink" href="#init" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span>anaxexp ci init <span class="o">[</span>INSTANCE UUID<span class="o">]</span>
+</pre></div>
+
+<p>This command will gather build information about your instance such as services (images) that can be built and private docker registry credentials. All builds must start with the init. To perform this step you must have your <a href="../../dev/#api-keys">AnaxExp API key</a> exported as <code>$ANAXEXP_API_KEY</code> or provided via <code>--api-key</code>. Make sure the key is secured and not exposed to public. </p>
+<h4 id="build">Build<a class="headerlink" href="#build" title="Permanent link">&para;</a></h4>
+<div class="admonition tldr">
+<p class="admonition-title">Services available during the build</p>
+<p>If you're building a managed stack, the list of services eligible for the build is hardcoded and you can find it in <a href="../stacks">a stack documentation</a>. If you're building a custom stack, all services that have <a href="../../stacks/template/#deployment"><code>deployment.type=ci</code></a> will be available</p>
+</div>
+<p>During the build stage you can prepare your codebase for the build by running <code>anaxexp ci run</code> which is basically a wrapper of <code>docker run</code>. </p>
+<p>You can either specify a docker image that runs a command:</p>
+<div class="codehilite"><pre><span></span>anaxexp ci run -i anaxexp/node:8 -- yarn install
+anaxexp ci run -i anaxexp/node:9 -p path/to/frontend -- yarn install
+</pre></div>
+
+<p>Or specify a service name from your stack, the image of your current stack version will be used:</p>
+<div class="codehilite"><pre><span></span>anaxexp ci run -s backend -- composer install --prefer-dist -n -o --no-dev
+</pre></div>
+
+<p>You can use bind mounts on libraries cache directories to utilize caching capabilities of your CI tool (<code>.travis.yml</code> example):</p>
+<div class="codehilite"><pre><span></span>cache:
+  directories:
+    - /home/travis/.composer/cache
+
+script:
+  - anaxexp ci run -v $HOME/.composer:$HOME/.composer -s php -- composer install
+</pre></div>
+
+<p>Once the codebase is ready you can run the build via <code>anaxexp ci build</code> which is a wrapper of <code>docker build</code>. By default the build command builds a new image based on the image of a service you specified, and copies codebase (contents of the current directory, same as <code>--from \.</code>) to service's image default working directory:</p>
+<div class="codehilite"><pre><span></span><span class="c1"># Build all ci services&#39; images</span>
+anaxexp ci build 
+<span class="c1"># Same thing</span>
+anaxexp ci build --from <span class="se">\.</span>
+<span class="c1"># Build php service image </span>
+anaxexp ci build php
+<span class="c1"># Build all images of services starting with node-</span>
+anaxexp ci build node-*
+<span class="c1"># Build php service image with the contents from ./build directory</span>
+anaxexp ci build php --from ./build
+<span class="c1"># Build node service image with the contents from ./build directory to /usr/src/app directory inside node image </span>
+anaxexp ci build node --from ./build --to /usr/src/app
+</pre></div>
+
+<p>Or you can build from your own <code>Dockerfile</code>:</p>
+<div class="codehilite"><pre><span></span>anaxexp ci build --dockerfile /path/to/my/Dockerfile
+</pre></div>
+
+<p>If you're using custom <code>Dockerfile</code> make sure it starts with the following lines to make sure it will be based on the image from your stack: </p>
+<div class="codehilite"><pre><span></span>ARG ANAXEXP_BASE_IMAGE
+FROM ${ANAXEXP_BASE_IMAGE}
+</pre></div>
+
+<p>By default we build images with the name (tag) of a private docker registry we provide. But you can use your own registry:</p>
+<div class="codehilite"><pre><span></span>anaxexp ci build -t my-private-docker-hub/repository
+</pre></div>
+
+<h4 id="release">Release<a class="headerlink" href="#release" title="Permanent link">&para;</a></h4>
+<div class="admonition tldr">
+<p class="admonition-title">Docker registry</p>
+<p>AnaxExp provides a private docker registry <code>registry.anaxexp.com</code> which used by default. You can use custom docker registry during the build but if it's a private one make sure to add the appropriate <a href="../../integrations/docker-registry/">docker registry integration</a> so servers where you deploy instances can access your images.</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">How to download images?</p>
+<p>Once you deployed your first build you can find images' URLs on <code>Instance &gt; Stack</code> page. You can get those images locally by running <code>docker login registry.anaxexp.com</code> and entering your AnaxExp user's email/password.  </p>
+</div>
+<p>Once images are built, you can push them to a docker registry:</p>
+<div class="codehilite"><pre><span></span><span class="c1"># Push all images to the default docker registry </span>
+anaxexp ci release
+<span class="c1"># Push images of specific services </span>
+anaxexp ci release php node
+<span class="c1"># Push to a custom docker registry</span>
+anaxexp ci release -t my-private-docker-hub/repository
+<span class="c1"># Additionally push with the tag of the current git branch name </span>
+anaxexp ci release -t my-private-docker-hub/repository -b
+</pre></div>
+
+<h4 id="deploy">Deploy<a class="headerlink" href="#deploy" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><span class="c1"># Deploy all services from the default docker registry</span>
+anaxexp ci deploy
+<span class="c1"># Deploy specific services</span>
+anaxexp ci deploy php crond
+<span class="c1"># Deploy all services from a custom docker registry</span>
+anaxexp ci deploy -t my-private-docker-hub/repository
+</pre></div>
+
+<h4 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h4>
+<p>You can find build examples for different CI services such as CircleCI, TravisCI, BitBucket pipelines and custom shell scripts at <a href="https://github.com/anaxexp/anaxexp-ci">https://github.com/anaxexp/anaxexp-ci</a> </p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+    
+    <div class="md-footer-nav">
+        <nav class="md-footer-nav__inner md-grid">
+            
+            <a href="apps/instances/" title="Instances" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+                <div class="md-flex__cell md-flex__cell--shrink">
+                    <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+                </div>
+                <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                Previous
+                </span>
+              Instances
+              </span>
+                </div>
+            </a>
+            
+            
+            <a href="apps/domains/" title="Domains" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+                <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                Next
+                </span>
+              Domains
+              </span>
+                </div>
+                <div class="md-flex__cell md-flex__cell--shrink">
+                    <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+                </div>
+            </a>
+            
+        </nav>
+    </div>
+    
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            <a target="_blank" href="http://anaxexp.com/" title="AnaxExp" class="md-header-nav__button md-logo">
+                <img src="../../assets/images/anaxexp-logo.png" width="24" height="24">
+            </a>
+
+            
+            
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://anaxexp.com" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/anaxexp" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/AnaxExpHQ" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
+            
+        </div>
+    </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.1",url:{base:"../.."}})</script>
+      
+        <script src="../../assets/intercom.js"></script>
+      
+        <script src="../../assets/anaxexp.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
