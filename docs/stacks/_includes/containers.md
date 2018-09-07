@@ -1,0 +1,13 @@
+{!stacks/_includes/containers/apache.md!}
+{!stacks/_includes/containers/blackfire.md!}
+{!stacks/_includes/containers/mailhog.md!}
+{!stacks/_includes/containers/memcached.md!}
+{!stacks/_includes/containers/nginx.md!}
+{!stacks/_includes/containers/node.md!}
+{!stacks/_includes/containers/php-apache.md!}
+{!stacks/_includes/containers/php-crond.md!}
+{!stacks/_includes/containers/php-dev.md!}
+{!stacks/_includes/containers/php-rsyslog.md!}
+{!stacks/_includes/containers/php-sshd.md!}
+{!stacks/_includes/containers/php.md!}
+{!stacks/_includes/containers/webgrind.md!}

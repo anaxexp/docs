@@ -2009,7 +2009,7 @@
 </tr>
 <tr>
 <td><code>$ANAXEXP_HOSTS</code></td>
-<td><code>[ &quot;example.com&quot;, &quot;dev.example.org.wod.by&quot; ]</code></td>
+<td><code>[ &quot;example.com&quot;, &quot;dev.example.org.anaxexp.io&quot; ]</code></td>
 </tr>
 </tbody>
 </table>
@@ -2085,7 +2085,7 @@ PHP_IDE_CONFIG: serverName=my-ide
 <li>You also need to have loopback alias with IP from above. You need this only once and that settings stays active until logout or restart:
     <div class="codehilite"><pre><span></span>sudo ifconfig lo0 <span class="nb">alias</span> <span class="m">10</span>.254.254.254
 </pre></div></li>
-<li>To add the loopback alias after a reboot, add the following contents to <code>/Library/LaunchDaemons/docker4drupal.loopback.plist</code>:
+<li>To add the loopback alias after a reboot, add the following contents to <code>/Library/LaunchDaemons/drupal4docker.loopback.plist</code>:
     <div class="codehilite"><pre><span></span><span class="nt">&lt;plist</span> <span class="na">version=</span><span class="s">&quot;1.0&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;dict&gt;</span>
     <span class="nt">&lt;key&gt;</span>Label<span class="nt">&lt;/key&gt;</span>
@@ -2111,7 +2111,7 @@ PHP_IDE_CONFIG: serverName=my-ide
 <li>Restart containers (<code>make</code>)</li>
 <li>Allow listen connection for your IDE in <code>Windows Firewall &gt; Allow an app ..</code></li>
 </ol>
-<p>Also, you might need to add the following lines to your hosts file (see related <a href="https://github.com/anaxexp/docker4drupal/issues/193">github issue</a>):
+<p>Also, you might need to add the following lines to your hosts file (see related <a href="https://github.com/anaxexp/drupal4docker/issues/193">github issue</a>):
 <div class="codehilite"><pre><span></span>0.0.0.0         localhost
 10.0.75.1       localhost
 </pre></div></p>

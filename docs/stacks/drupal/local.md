@@ -1,6 +1,6 @@
-# Local environment with Docker4Drupal
+# Local environment with Drupal4Docker
 
-Docker4Drupal is an open-source project ([GitHub page](https://github.com/anaxexp/docker4drupal)) that provides pre-configured `docker-compose.yml` file with images to spin up local environment on Linux, Mac OS X and Windows. 
+Drupal4Docker is an open-source project ([GitHub page](https://github.com/anaxexp/drupal4docker)) that provides pre-configured `docker-compose.yml` file with images to spin up local environment on Linux, Mac OS X and Windows. 
 
 ## Requirements
 
@@ -11,11 +11,11 @@ Docker4Drupal is an open-source project ([GitHub page](https://github.com/anaxex
 
 {!stacks/_includes/local/db-data-persistence.md!}
 
-There are 2 options how to use docker4drupal – you can either run [vanilla](https://en.wikipedia.org/wiki/Vanilla_software) Drupal from the image or mount your own Drupal codebase:
+There are 2 options how to use drupal4docker – you can either run [vanilla](https://en.wikipedia.org/wiki/Vanilla_software) Drupal from the image or mount your own Drupal codebase:
 
 ### Vanilla Drupal
 
-1. Clone [docker4drupal repository](https://github.com/anaxexp/docker4drupal) and switch to the [latest stable tag](https://github.com/anaxexp/docker4drupal/releases) or download/unpack the source code from the [latest release](https://github.com/anaxexp/docker4drupal/releases)
+1. Clone [drupal4docker repository](https://github.com/anaxexp/drupal4docker) and switch to the [latest stable tag](https://github.com/anaxexp/drupal4docker/releases) or download/unpack the source code from the [latest release](https://github.com/anaxexp/drupal4docker/releases)
 2. Optional: for Drupal 7 or 6 comment out corresponding `DRUPAL_TAG` and `NGINX_TAG` in `.env` file
 4. [Configure domains](#domains)
 3. From project root directory run `docker-compose up -d` or `make up` to start containers. Give it 10-20 seconds to initialize after the start
@@ -24,7 +24,7 @@ There are 2 options how to use docker4drupal – you can either run [vanilla](ht
 
 ### Mount my codebase
 
-1. Download `docker4drupal.tar.gz` from the [latest stable release](https://github.com/anaxexp/docker4drupal/releases) and unpack to your Drupal project root. If you choose to clone [the repository](https://github.com/anaxexp/docker4drupal) delete `docker-compose.override.yml` as it's used to deploy vanilla Drupal
+1. Download `drupal4docker.tar.gz` from the [latest stable release](https://github.com/anaxexp/drupal4docker/releases) and unpack to your Drupal project root. If you choose to clone [the repository](https://github.com/anaxexp/drupal4docker) delete `docker-compose.override.yml` as it's used to deploy vanilla Drupal
 2. Ensure `NGINX_SERVER_ROOT` (or `APACHE_SERVER_ROOT`) is correct, by default set to `/var/www/html/web` for composer-based projects where Drupal is in `web` subdirectory
 3. Ensure database access settings in your `settings.php` corresponds to values in `.env` file, e.g.:
     ```php
@@ -52,10 +52,10 @@ There are 2 options how to use docker4drupal – you can either run [vanilla](ht
 You can stop containers by executing [`make stop`](#make-commands) or `docker-compose stop`.
 
 !!! info "Optional files"
-    If you don't need to [run multiple projects](#running-multiple-projects) and don't use [docker-sync to improve volumes performance on macOS](#docker-for-mac) feel free to delete `traefik.yml` and `docker-sync.yml` that come with the `docker4drupal.tar.gz`
+    If you don't need to [run multiple projects](#running-multiple-projects) and don't use [docker-sync to improve volumes performance on macOS](#docker-for-mac) feel free to delete `traefik.yml` and `docker-sync.yml` that come with the `drupal4docker.tar.gz`
 
 !!! success "Get updates"
-    We release updates to images from time to time, you can find detailed changelog and update instructions on GitHub under [releases page](https://github.com/anaxexp/docker4drupal/releases)      
+    We release updates to images from time to time, you can find detailed changelog and update instructions on GitHub under [releases page](https://github.com/anaxexp/drupal4docker/releases)      
 
 ## Domains
 

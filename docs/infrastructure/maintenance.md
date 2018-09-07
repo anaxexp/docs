@@ -111,7 +111,7 @@ Release date: `June 16th, 2016`
 * WWW redirect actions for domains
 * Basic auth configuration
 * Maintenance mode
-* Dev, staging instances and all instances accessible by technical `*.wod.by` domains not indexed by search engines (header X-Robots-Tag)  
+* Dev, staging instances and all instances accessible by technical `*.anaxexp.io` domains not indexed by search engines (header X-Robots-Tag)  
 
 ### 3.1.0
 

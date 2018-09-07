@@ -27,7 +27,7 @@ In addition to [global environment variables](/infrastructure/env-vars.md), we p
 | `$ANAXEXP_APP_NAME`     | My app                                        |
 | `$ANAXEXP_HOST_PRIMARY` | example.com                                   |
 | `$ANAXEXP_URL_PRIMARY`  | http://example.com                            |
-| `$ANAXEXP_HOSTS`        | `[ "example.com", "dev.example.org.wod.by" ]` |
+| `$ANAXEXP_HOSTS`        | `[ "example.com", "dev.example.org.anaxexp.io" ]` |
 
 Deprecated variables:
 

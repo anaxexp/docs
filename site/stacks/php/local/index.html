@@ -106,7 +106,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../../../#local-environment-with-docker4php" tabindex="1" class="md-skip">
+      <a href="../../../#local-environment-with-php4docker" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -1799,8 +1799,8 @@
                   <a href="https://github.com/anaxexp/docs/edit/master/docs/stacks/php/local.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="local-environment-with-docker4php">Local environment with Docker4PHP<a class="headerlink" href="#local-environment-with-docker4php" title="Permanent link">&para;</a></h1>
-<p>Docker4PHP is an open-source project (<a href="https://github.com/anaxexp/php4docker">GitHub page</a>) that provides pre-configured <code>docker-compose.yml</code> file with images to spin up local environment on Linux, Mac OS X and Windows. </p>
+                <h1 id="local-environment-with-php4docker">Local environment with PHP4Docker<a class="headerlink" href="#local-environment-with-php4docker" title="Permanent link">&para;</a></h1>
+<p>PHP4Docker is an open-source project (<a href="https://github.com/anaxexp/php4docker">GitHub page</a>) that provides pre-configured <code>docker-compose.yml</code> file with images to spin up local environment on Linux, Mac OS X and Windows. </p>
 <h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Install Docker (<a href="https://docs.docker.com/engine/installation">Linux</a>, <a href="https://docs.docker.com/engine/installation/mac">Docker for Mac</a> or <a href="https://docs.docker.com/engine/installation/windows">Docker for Windows (10+ Pro)</a>)</li>
@@ -1834,7 +1834,7 @@
 <p>We release updates to images from time to time, you can find detailed changelog and update instructions on GitHub under <a href="https://github.com/anaxexp/php4docker/releases">releases page</a>  </p>
 </div>
 <h2 id="domains">Domains<a class="headerlink" href="#domains" title="Permanent link">&para;</a></h2>
-<p>Docker4PHP uses <a href="https://hub.docker.com/_/traefik">traefik</a> container for routing. By default, we use port <code>8000</code> to avoid potential conflicts but if port <code>80</code> is free on your host machine just replace traefik's ports definition in the compose file.</p>
+<p>PHP4Docker uses <a href="https://hub.docker.com/_/traefik">traefik</a> container for routing. By default, we use port <code>8000</code> to avoid potential conflicts but if port <code>80</code> is free on your host machine just replace traefik's ports definition in the compose file.</p>
 <p>By default <code>BASE_URL</code> set to <code>php.docker.localhost</code>, you can change it in <code>.env</code> file.</p>
 <p>Add <code>127.0.0.1 php.docker.localhost</code> to your <code>/etc/hosts</code> file (some browsers like Chrome may work without it). Do the same for other default domains you might need from listed below:  </p>
 <table>
@@ -1922,7 +1922,7 @@ Commands:
 </pre></div>
 
 <ol>
-<li>Download <code>docker-sync.yml</code> file (inside of <code>docker4x.tar.gz</code> archive) from the latest stable release</li>
+<li>Download <code>docker-sync.yml</code> file (inside of <code>x4docker.tar.gz</code> archive) from the latest stable release</li>
 <li>Uncomment <em>docker-sync</em> volume definition in your compose file</li>
 <li>Replace <em>volumes</em> definition of <em>php</em> and <em>nginx</em>/<em>apache</em> services with the option below marked as "Docker-sync".</li>
 <li>Start docker-sync: <code>docker-sync start</code></li>

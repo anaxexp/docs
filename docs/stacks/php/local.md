@@ -1,6 +1,6 @@
-# Local environment with Docker4PHP
+# Local environment with PHP4Docker
 
-Docker4PHP is an open-source project ([GitHub page](https://github.com/anaxexp/php4docker)) that provides pre-configured `docker-compose.yml` file with images to spin up local environment on Linux, Mac OS X and Windows. 
+PHP4Docker is an open-source project ([GitHub page](https://github.com/anaxexp/php4docker)) that provides pre-configured `docker-compose.yml` file with images to spin up local environment on Linux, Mac OS X and Windows. 
 
 ## Requirements
 
@@ -33,7 +33,7 @@ You can stop containers by executing [`make stop`](#make-commands) or `docker-co
     
 ## Domains
 
-Docker4PHP uses [traefik](https://hub.docker.com/_/traefik) container for routing. By default, we use port `8000` to avoid potential conflicts but if port `80` is free on your host machine just replace traefik's ports definition in the compose file.
+PHP4Docker uses [traefik](https://hub.docker.com/_/traefik) container for routing. By default, we use port `8000` to avoid potential conflicts but if port `80` is free on your host machine just replace traefik's ports definition in the compose file.
 
 By default `BASE_URL` set to `php.docker.localhost`, you can change it in `.env` file.
 

@@ -55,7 +55,7 @@ markdown_extensions:
   - markdown_include.include:
       base_path: docs
 
-pages:
+nav:
   - Home: index.md
   - Billing: billing.md
   - Development: dev.md

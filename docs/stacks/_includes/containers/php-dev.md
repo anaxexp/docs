@@ -45,7 +45,7 @@ Follow these steps to debug your application instance remotely with [xdebug](htt
     ```bash
     sudo ifconfig lo0 alias 10.254.254.254
     ```
-4. To add the loopback alias after a reboot, add the following contents to `/Library/LaunchDaemons/docker4drupal.loopback.plist`:
+4. To add the loopback alias after a reboot, add the following contents to `/Library/LaunchDaemons/drupal4docker.loopback.plist`:
     ```xml
     <plist version="1.0">
       <dict>
@@ -72,7 +72,7 @@ Follow these steps to debug your application instance remotely with [xdebug](htt
 2. Restart containers (`make`)
 3. Allow listen connection for your IDE in `Windows Firewall > Allow an app ..`
 
-Also, you might need to add the following lines to your hosts file (see related [github issue](https://github.com/anaxexp/docker4drupal/issues/193)):
+Also, you might need to add the following lines to your hosts file (see related [github issue](https://github.com/anaxexp/drupal4docker/issues/193)):
 ```
 0.0.0.0			localhost
 10.0.75.1		localhost

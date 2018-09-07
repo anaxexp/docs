@@ -16,6 +16,6 @@ How to:
 
 Open-source projects for local development:
 
-* [Docker4Drupal](stacks/drupal/local.md)
+* [Drupal4Docker](stacks/drupal/local.md)
 * [WordPress4Docker](stacks/wordpress/local.md)
-* [Docker4PHP](stacks/php/local.md)
+* [PHP4Docker](stacks/php/local.md)

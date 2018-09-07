@@ -5,7 +5,7 @@ Stack pages:
 * [Drupal 8](https://cloud.anaxexp.com/stackhub/ada51e9b-2204-45ee-8e49-a4151912a168/overview)
 * [Drupal 7](https://cloud.anaxexp.com/stackhub/35e3e058-936b-4695-9871-08c855aae898/overview)
 * [Drupal 6](https://cloud.anaxexp.com/stackhub/0ade1c32-7b75-41ad-b796-4de97fb7dc4e/overview)
-* [Docker4Drupal (local environment)](https://github.com/anaxexp/docker4drupal)
+* [Drupal4Docker (local environment)](https://github.com/anaxexp/drupal4docker)
 
 ## Deployment
 

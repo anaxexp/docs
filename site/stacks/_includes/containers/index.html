@@ -13,7 +13,7 @@
         <meta name="description" content="AnaxExp documentation">
       
       
-        <link rel="canonical" href="https://anaxexp.github.io/docs/stacks/drupal/local/">
+        <link rel="canonical" href="https://anaxexp.github.io/docs/stacks/_includes/containers/">
       
       
         <meta name="author" content="AnaxExp, LLC.">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Local environment - AnaxExp documentation</title>
+        <title>Containers - AnaxExp documentation</title>
       
     
     
@@ -106,7 +106,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../../../#local-environment-with-drupal4docker" tabindex="1" class="md-skip">
+      <a href="../../../#xdebug-remote" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -143,7 +143,7 @@
                 </span>
               </span>
               <span class="md-header-nav__topic">
-                Local environment
+                Containers
               </span>
             
           
@@ -217,16 +217,14 @@
       
         
 
-
-
-<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+<nav class="md-tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
       
   <li class="md-tabs__item">
     
-      <a href="../../.." title="Home" class="md-tabs__link">
+      <a href="../../.." title="Home" class="md-tabs__link md-tabs__link--active">
         Home
       </a>
     
@@ -278,7 +276,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../" title="Stacks" class="md-tabs__link md-tabs__link--active">
+        <a href="../../" title="Stacks" class="md-tabs__link">
           Stacks
         </a>
       
@@ -721,12 +719,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
     
     <label class="md-nav__link" for="nav-11">
       Stacks
@@ -790,12 +786,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-5" type="checkbox" id="nav-11-5" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-5" type="checkbox" id="nav-11-5">
     
     <label class="md-nav__link" for="nav-11-5">
       Drupal
@@ -813,7 +807,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Overview" class="md-nav__link">
+    <a href="../../drupal/" title="Overview" class="md-nav__link">
       Overview
     </a>
   </li>
@@ -825,7 +819,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../containers/" title="Containers" class="md-nav__link">
+    <a href="../../drupal/containers/" title="Containers" class="md-nav__link">
       Containers
     </a>
   </li>
@@ -835,212 +829,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Local environment
-      </label>
-    
-    <a href="./" title="Local environment" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../drupal/local/" title="Local environment" class="md-nav__link">
       Local environment
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#requirements" title="Requirements" class="md-nav__link">
-    Requirements
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage" title="Usage" class="md-nav__link">
-    Usage
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#vanilla-drupal" title="Vanilla Drupal" class="md-nav__link">
-    Vanilla Drupal
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mount-my-codebase" title="Mount my codebase" class="md-nav__link">
-    Mount my codebase
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#domains" title="Domains" class="md-nav__link">
-    Domains
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#database-import-and-export" title="Database import and export" class="md-nav__link">
-    Database import and export
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mariadb" title="MariaDB" class="md-nav__link">
-    MariaDB
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#postgresql" title="PostgreSQL" class="md-nav__link">
-    PostgreSQL
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#make-commands" title="Make commands" class="md-nav__link">
-    Make commands
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#docker-for-mac" title="Docker for mac" class="md-nav__link">
-    Docker for mac
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#macos-permissions-issues" title="macOS permissions issues" class="md-nav__link">
-    macOS permissions issues
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bind-mounts-performance" title="Bind mounts performance" class="md-nav__link">
-    Bind mounts performance
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#user-guided-caching" title="User-guided caching" class="md-nav__link">
-    User-guided caching
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#docker-sync" title="Docker-sync" class="md-nav__link">
-    Docker-sync
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#permissions-issues" title="Permissions issues" class="md-nav__link">
-    Permissions issues
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#linux" title="Linux" class="md-nav__link">
-    Linux
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#macos" title="macOS" class="md-nav__link">
-    macOS
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#windows" title="Windows" class="md-nav__link">
-    Windows
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#different-uidgid" title="Different uid/gid?" class="md-nav__link">
-    Different uid/gid?
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#running-multiple-projects" title="Running multiple Projects" class="md-nav__link">
-    Running multiple Projects
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1050,7 +843,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../changelog/" title="Changelog" class="md-nav__link">
+    <a href="../../drupal/changelog/" title="Changelog" class="md-nav__link">
       Changelog
     </a>
   </li>
@@ -1644,152 +1437,50 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requirements" title="Requirements" class="md-nav__link">
-    Requirements
+  <a href="#xdebug-remote" title="Xdebug (remote)" class="md-nav__link">
+    Xdebug (remote)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#usage" title="Usage" class="md-nav__link">
-    Usage
+  <a href="#xdebug-local" title="Xdebug (local)" class="md-nav__link">
+    Xdebug (local)
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#vanilla-drupal" title="Vanilla Drupal" class="md-nav__link">
-    Vanilla Drupal
+  <a href="#debugging-web-requests" title="Debugging web requests" class="md-nav__link">
+    Debugging web requests
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#mount-my-codebase" title="Mount my codebase" class="md-nav__link">
-    Mount my codebase
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#domains" title="Domains" class="md-nav__link">
-    Domains
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#database-import-and-export" title="Database import and export" class="md-nav__link">
-    Database import and export
+  <a href="#debugging-cli-requests" title="Debugging CLI requests" class="md-nav__link">
+    Debugging CLI requests
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mariadb" title="MariaDB" class="md-nav__link">
-    MariaDB
+  <a href="#linux-docker" title="Linux, Docker" class="md-nav__link">
+    Linux, Docker
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#postgresql" title="PostgreSQL" class="md-nav__link">
-    PostgreSQL
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#make-commands" title="Make commands" class="md-nav__link">
-    Make commands
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#docker-for-mac" title="Docker for mac" class="md-nav__link">
-    Docker for mac
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#macos-permissions-issues" title="macOS permissions issues" class="md-nav__link">
-    macOS permissions issues
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bind-mounts-performance" title="Bind mounts performance" class="md-nav__link">
-    Bind mounts performance
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#user-guided-caching" title="User-guided caching" class="md-nav__link">
-    User-guided caching
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#docker-sync" title="Docker-sync" class="md-nav__link">
-    Docker-sync
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#permissions-issues" title="Permissions issues" class="md-nav__link">
-    Permissions issues
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#linux" title="Linux" class="md-nav__link">
-    Linux
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#macos" title="macOS" class="md-nav__link">
-    macOS
+  <a href="#macos-docker" title="macOS, Docker" class="md-nav__link">
+    macOS, Docker
   </a>
   
 </li>
@@ -1801,10 +1492,28 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+        
           <li class="md-nav__item">
-  <a href="#different-uidgid" title="Different uid/gid?" class="md-nav__link">
-    Different uid/gid?
+  <a href="#ide-configuration" title="IDE configuration" class="md-nav__link">
+    IDE configuration
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phpstorm" title="PHPStorm" class="md-nav__link">
+    PHPStorm
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1814,8 +1523,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#running-multiple-projects" title="Running multiple Projects" class="md-nav__link">
-    Running multiple Projects
+  <a href="#newrelic" title="NewRelic" class="md-nav__link">
+    NewRelic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#profiling" title="Profiling" class="md-nav__link">
+    Profiling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files-directory-permissions" title="Files directory permissions" class="md-nav__link">
+    Files directory permissions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-variables" title="Environment variables" class="md-nav__link">
+    Environment variables
   </a>
   
 </li>
@@ -1836,225 +1566,235 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/anaxexp/docs/edit/master/docs/stacks/drupal/local.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/anaxexp/docs/edit/master/docs/stacks/_includes/containers.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="local-environment-with-drupal4docker">Local environment with Drupal4Docker<a class="headerlink" href="#local-environment-with-drupal4docker" title="Permanent link">&para;</a></h1>
-<p>Drupal4Docker is an open-source project (<a href="https://github.com/anaxexp/drupal4docker">GitHub page</a>) that provides pre-configured <code>docker-compose.yml</code> file with images to spin up local environment on Linux, Mac OS X and Windows. </p>
-<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Install Docker (<a href="https://docs.docker.com/engine/installation">Linux</a>, <a href="https://docs.docker.com/engine/installation/mac">Docker for Mac</a> or <a href="https://docs.docker.com/engine/installation/windows">Docker for Windows (10+ Pro)</a>)</li>
-<li>For Linux additionally install <a href="https://docs.docker.com/compose/install">docker compose</a></li>
+                  <h1>Containers</h1>
+                
+                <ul>
+<li>Apache can be configured with the following <a href="https://github.com/anaxexp/apache#environment-variables">environment variables</a></li>
+<li>Default Apache <a href="https://github.com/anaxexp/apache/blob/master/templates/vhost.conf.tpl">virtual host config</a></li>
+<li>Installed <a href="https://github.com/anaxexp/apache/blob/master/test/apache_modules">apache modules</a> </li>
 </ul>
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Database data persistence</p>
-<p>By default Docker will create a persistent <a href="https://docs.docker.com/storage/volumes/">volume</a> for your DB data and unless you explicitly remove volumes the files will not be deleted. However, if you run <code>docker-compose down</code> (it's ok to use <code>stop</code> though) these volumes will not be reattached when you run <code>docker-compose up</code>. If you want to have your DB data all-time persistent and attached, we recommend using <a href="https://docs.docker.com/storage/bind-mounts/">a bind mount</a>. To use a bind mount uncomment to corresponding line under db server's <code>volumes:</code> in your <code>docker-compose.yml</code> and update the host path to your data directory.</p>
-</div>
-<p>There are 2 options how to use drupal4docker – you can either run <a href="https://en.wikipedia.org/wiki/Vanilla_software">vanilla</a> Drupal from the image or mount your own Drupal codebase:</p>
-<h3 id="vanilla-drupal">Vanilla Drupal<a class="headerlink" href="#vanilla-drupal" title="Permanent link">&para;</a></h3>
+<p>Restarting apache as default user:</p>
+<p><div class="codehilite"><pre><span></span>sudo httpd -k restart
+</pre></div>
+You can profile your application via blackfire.io by following the next steps:</p>
+<ul>
+<li>Enable blackfire probe extension by adding the environment variable <code>PHP_BLACKFIRE=1</code> to PHP container</li>
+<li>Enable blackfire agent service in your stack</li>
+<li>Add environment variables <code>BLACKFIRE_SERVER_ID</code> and <code>BLACKFIRE_SERVER_TOKEN</code> to blackfire agent service with appropriate values from your blackfire.io profile</li>
+<li>Install blackfire companion extension for <a href="https://blackfire.io/docs/integrations/chrome">Chrome</a> or <a href="https://blackfire.io/docs/integrations/firefox">Firefox</a></li>
+<li>Start profiling your app via the extension and see data from blackfire.io dashboard</li>
+</ul>
+<p>Fore more details please refer to the <a href="https://blackfire.io/docs/introduction">blackfire official documentation</a>
+If Mailhog service enabled and chosen as <em>Mail delivery service</em> at <code>[Instance] &gt; Stack &gt; Settings</code> all outbound email will be caught by the Mailhog. You can view and release these emails from Mailhog UI, the URL can be found from Domains tab. When release specify <code>opensmtpd</code> in <code>SMTP server</code> field if you want to release emails to the default Mail transfer agent (<a href="../../opensmtpd/">OpenSMTPD</a>).
+You can check the status of memcached and its hits by running the following command.
+<div class="codehilite"><pre><span></span>watch <span class="s2">&quot;echo stats | nc 127.0.0.1 11211&quot;</span>
+</pre></div>
+* Nginx can be configured with the following <a href="https://github.com/anaxexp/nginx#environment-variables">environment variables</a>
+* Default Nginx <a href="https://github.com/anaxexp/nginx/blob/master/templates/vhost.conf.tpl">virtual host config</a>
+* Installed <a href="https://github.com/anaxexp/nginx/blob/master/test/nginx_modules">nginx modules</a> </p>
+<p>Restarting nginx as default user:</p>
+<p><div class="codehilite"><pre><span></span>sudo nginx -s reload
+</pre></div>
+Light-weight node.js container to help you build your application's frontend. The containers comes without any global pre-installed packages, you can add them by running <code>yarn global add PACKAGE</code> or by running <code>yarn</code> in a directory with your <code>package.json</code> file.
+* Apache can be configured with the following <a href="https://github.com/anaxexp/php-apache#environment-variables">environment variables</a>
+* Default Apache <a href="https://github.com/anaxexp/php-apache/blob/master/templates/vhost.conf.tpl">virtual host config</a>
+* Installed <a href="https://github.com/anaxexp/apache/blob/master/test/apache_modules">apache modules</a> </p>
+<p>Restarting apache as default user:</p>
+<p><div class="codehilite"><pre><span></span>sudo httpd -k restart
+</pre></div>
+A duplicate of the main PHP container runs with crond (instead of FPM). You can customize crontab from <code>[Instance] &gt; Stack &gt; Settings</code> page.</p>
+<h3 id="xdebug-remote">Xdebug (remote)<a class="headerlink" href="#xdebug-remote" title="Permanent link">&para;</a></h3>
+<p>Follow these steps to debug your application instance remotely with <a href="http://xdebug.org/docs/install">xdebug</a>:</p>
 <ol>
-<li>Clone <a href="https://github.com/anaxexp/drupal4docker">drupal4docker repository</a> and switch to the <a href="https://github.com/anaxexp/drupal4docker/releases">latest stable tag</a> or download/unpack the source code from the <a href="https://github.com/anaxexp/drupal4docker/releases">latest release</a></li>
-<li>Optional: for Drupal 7 or 6 comment out corresponding <code>DRUPAL_TAG</code> and <code>NGINX_TAG</code> in <code>.env</code> file</li>
-<li><a href="#domains">Configure domains</a></li>
-<li>From project root directory run <code>docker-compose up -d</code> or <code>make up</code> to start containers. Give it 10-20 seconds to initialize after the start</li>
-<li>That's it! Proceed with Drupal installation at <a href="http://drupal.docker.localhost:8000">http://drupal.docker.localhost:8000</a>. Default database user, password and database name are all <code>drupal</code>, database host is <code>mariadb</code></li>
-<li>You can see status of your containers and their logs via portainer: <a href="http://portainer.drupal.docker.localhost:8000">http://portainer.drupal.docker.localhost:8000</a></li>
+<li>Enable xdebug for your instance from <code>[Instance] &gt; Stack &gt; Settings</code></li>
+<li>Set up forwarding for xdebug: copy <em>Xdebug SSH tunnel</em> command from <code>[Instance] &gt; Stack &gt; PHP</code> and run on your local machine</li>
+<li>Make sure you have your IDE xdebug listener running on port 9000</li>
+<li>Start debugging in IDE</li>
+<li>Start your browser debug helper plugin (<a href="https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc?hl=en">Chrome</a> or <a href="https://addons.mozilla.org/en-us/firefox/addon/the-easiest-xdebug">Firefox</a>) and open the page you want to debug</li>
 </ol>
-<h3 id="mount-my-codebase">Mount my codebase<a class="headerlink" href="#mount-my-codebase" title="Permanent link">&para;</a></h3>
+<h3 id="xdebug-local">Xdebug (local)<a class="headerlink" href="#xdebug-local" title="Permanent link">&para;</a></h3>
+<h4 id="debugging-web-requests">Debugging web requests<a class="headerlink" href="#debugging-web-requests" title="Permanent link">&para;</a></h4>
 <ol>
-<li>Download <code>drupal4docker.tar.gz</code> from the <a href="https://github.com/anaxexp/drupal4docker/releases">latest stable release</a> and unpack to your Drupal project root. If you choose to clone <a href="https://github.com/anaxexp/drupal4docker">the repository</a> delete <code>docker-compose.override.yml</code> as it's used to deploy vanilla Drupal</li>
-<li>Ensure <code>NGINX_SERVER_ROOT</code> (or <code>APACHE_SERVER_ROOT</code>) is correct, by default set to <code>/var/www/html/web</code> for composer-based projects where Drupal is in <code>web</code> subdirectory</li>
-<li>Ensure database access settings in your <code>settings.php</code> corresponds to values in <code>.env</code> file, e.g.:
-    <div class="codehilite"><pre><span></span><span class="x">$databases[&#39;default&#39;][&#39;default&#39;] = array (</span>
-<span class="x">  &#39;database&#39; =&gt; &#39;drupal&#39;, // same as $DB_NAME</span>
-<span class="x">  &#39;username&#39; =&gt; &#39;drupal&#39;, // same as $DB_USER</span>
-<span class="x">  &#39;password&#39; =&gt; &#39;drupal&#39;, // same as $DB_PASSWORD</span>
-<span class="x">  &#39;host&#39; =&gt; &#39;mariadb&#39;, // same as $DB_HOST</span>
-<span class="x">  &#39;driver&#39; =&gt; &#39;mysql&#39;,  // same as $DB_DRIVER</span>
-<span class="x">  &#39;port&#39; =&gt; &#39;3306&#39;, // different for PostgreSQL</span>
-<span class="x">  &#39;namespace&#39; =&gt; &#39;Drupal\\Core\\Database\\Driver\\mysql&#39;, // different for PostgreSQL</span>
-<span class="x">  &#39;prefix&#39; =&gt; &#39;&#39;,</span>
-<span class="x">);</span>
+<li>Uncomment these lines for PHP service in your docker-compose file
+    <div class="codehilite"><pre><span></span>PHP_XDEBUG: 1                 
+PHP_XDEBUG_DEFAULT_ENABLE: 1
 </pre></div></li>
-<li><a href="#domains">Configure domains</a></li>
-<li>Optional: for Drupal 7 or 6 comment out corresponding <code>PHP_TAG</code> and <code>NGINX_TAG</code> in your <code>.env</code> file</li>
-<li>Optional: <a href="#database-import-and-export">import existing database</a></li>
-<li>Optional: uncomment lines in the compose file to run redis, solr, varnish, etc</li>
-<li>Optional: macOS users please read <a href="#docker-for-mac">this</a></li>
-<li>Optional: Windows users please read <a href="#windows">this</a></li>
-<li>Run containers: <a href="#make-commands"><code>make up</code></a> or <code>docker-compose up -d</code></li>
-<li>Your drupal website should be up and running at <a href="http://drupal.docker.localhost:8000">http://drupal.docker.localhost:8000</a></li>
-<li>You can see status of your containers and their logs via portainer: <a href="http://portainer.drupal.docker.localhost:8000">http://portainer.drupal.docker.localhost:8000</a></li>
+<li>Restart containers (<code>make</code>)    </li>
+<li>Start debugging in IDE</li>
+<li>Start your browser debug helper plugin (<a href="https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc?hl=en">Chrome</a> or <a href="https://addons.mozilla.org/en-us/firefox/addon/the-easiest-xdebug">Firefox</a>) and open the page you want to debug. Alternatively, enable auto start by adding <code>PHP_XDEBUG_REMOTE_AUTOSTART=1</code></li>
 </ol>
-<p>You can stop containers by executing <a href="#make-commands"><code>make stop</code></a> or <code>docker-compose stop</code>.</p>
+<h4 id="debugging-cli-requests">Debugging CLI requests<a class="headerlink" href="#debugging-cli-requests" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Enable Xdebug as described in the previous section</li>
+<li>Uncomment the following environment variables for PHP service in your composer file
+    <div class="codehilite"><pre><span></span>PHP_XDEBUG_REMOTE_CONNECT_BACK: 0    
+PHP_IDE_CONFIG: serverName=my-ide
+</pre></div></li>
+<li><a href="#ide-configuration-to-debug-cli-requests">Configure your IDE</a></li>
+<li>Perform configuration as described below depending on your OS and Docker version:</li>
+</ol>
+<h5 id="linux-docker">Linux, Docker<a class="headerlink" href="#linux-docker" title="Permanent link">&para;</a></h5>
+<ol>
+<li>Uncomment <code>PHP_XDEBUG_REMOTE_HOST: 172.17.0.1</code> for PHP service (if you have docker 18.03+ you can specify <code>host.docker.internal</code> instead of the IP address)</li>
+<li>Restart containers (<code>make</code>)</li>
+</ol>
+<h5 id="macos-docker">macOS, Docker<a class="headerlink" href="#macos-docker" title="Permanent link">&para;</a></h5>
+<ol>
+<li>Uncomment <code>PHP_XDEBUG_REMOTE_HOST: 10.254.254.254</code> for PHP service (just a random IP that very likely won't be used by anything else).</li>
+<li>Restart containers (<code>make</code>)</li>
+<li>You also need to have loopback alias with IP from above. You need this only once and that settings stays active until logout or restart:
+    <div class="codehilite"><pre><span></span>sudo ifconfig lo0 <span class="nb">alias</span> <span class="m">10</span>.254.254.254
+</pre></div></li>
+<li>To add the loopback alias after a reboot, add the following contents to <code>/Library/LaunchDaemons/drupal4docker.loopback.plist</code>:
+    <div class="codehilite"><pre><span></span><span class="nt">&lt;plist</span> <span class="na">version=</span><span class="s">&quot;1.0&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;dict&gt;</span>
+    <span class="nt">&lt;key&gt;</span>Label<span class="nt">&lt;/key&gt;</span>
+    <span class="nt">&lt;string&gt;</span>Default Loopback alias<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;key&gt;</span>ProgramArguments<span class="nt">&lt;/key&gt;</span>
+    <span class="nt">&lt;array&gt;</span>
+      <span class="nt">&lt;string&gt;</span>/sbin/ifconfig<span class="nt">&lt;/string&gt;</span>
+      <span class="nt">&lt;string&gt;</span>lo0<span class="nt">&lt;/string&gt;</span>
+      <span class="nt">&lt;string&gt;</span>alias<span class="nt">&lt;/string&gt;</span>
+      <span class="nt">&lt;string&gt;</span>10.254.254.254<span class="nt">&lt;/string&gt;</span>
+      <span class="nt">&lt;string&gt;</span>netmask<span class="nt">&lt;/string&gt;</span>
+      <span class="nt">&lt;string&gt;</span>255.255.255.0<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;/array&gt;</span>
+    <span class="nt">&lt;key&gt;</span>RunAtLoad<span class="nt">&lt;/key&gt;</span>
+    <span class="nt">&lt;true/&gt;</span>
+  <span class="nt">&lt;/dict&gt;</span>
+<span class="nt">&lt;/plist&gt;</span>
+</pre></div></li>
+</ol>
+<h5 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h5>
+<ol>
+<li>Uncomment <code>PHP_XDEBUG_REMOTE_HOST: 10.0.75.1</code> for PHP service (default IP of Docker NAT).</li>
+<li>Restart containers (<code>make</code>)</li>
+<li>Allow listen connection for your IDE in <code>Windows Firewall &gt; Allow an app ..</code></li>
+</ol>
+<p>Also, you might need to add the following lines to your hosts file (see related <a href="https://github.com/anaxexp/drupal4docker/issues/193">github issue</a>):
+<div class="codehilite"><pre><span></span>0.0.0.0         localhost
+10.0.75.1       localhost
+</pre></div></p>
+<h4 id="ide-configuration">IDE configuration<a class="headerlink" href="#ide-configuration" title="Permanent link">&para;</a></h4>
+<p>You must additionally configure your IDE to debug CLI requests.</p>
+<h5 id="phpstorm">PHPStorm<a class="headerlink" href="#phpstorm" title="Permanent link">&para;</a></h5>
+<ol>
+<li>Open <code>Run &gt; Edit Configurations</code> from the main menu, choose <code>Defaults &gt; PHP Web Page</code> in the left sidebar</li>
+<li>Click to <code>[...]</code> to the right of <code>Server</code> and add a new server<ul>
+<li>Enter name <code>my-ide</code> (as specified in <code>PHP_IDE_CONFIG</code>)</li>
+<li>Enter any host, it does not matter</li>
+<li>Check <code>Use path mappings</code>, select path to your project and enter <code>/var/www/html</code> in the right column (Absolute path on the server) </li>
+</ul>
+</li>
+<li>Choose newly created server in "Server" for PHP Web Page</li>
+<li>Save settings</li>
+</ol>
+<h3 id="newrelic">NewRelic<a class="headerlink" href="#newrelic" title="Permanent link">&para;</a></h3>
+<p>You can add NewRelic APM monitoring for PHP by adding environment variables <code>PHP_NEWRELIC_ENABLED=1</code> and <code>PHP_NEWRELIC_LICENSE</code> with your license number to PHP-FPM container. Application name will be automatically set to <code>[AnaxExp Application Name] - [AnaxExp Instance Name]</code>, if you want to change it, use <code>PHP_NEWRELIC_APPNAME</code>. </p>
+<h3 id="profiling">Profiling<a class="headerlink" href="#profiling" title="Permanent link">&para;</a></h3>
+<p>You can profile your PHP application either via Xdebug traces (+<a href="#webgrind">Webgrind</a>) or Tideways XHProf extensions.
+Rsyslog can be used to stream your applications logs. It's similar to using syslog, however there's no syslog in PHP container (one process per container). Rsyslog will stream all incoming logs to a container output.</p>
+<p>You can use <a href="https://packagist.org/packages/monolog/monolog">Monolog</a> with <code>SyslogUdpHandler</code> to stream logs to rsyslog
+A duplicate of PHP container runs with SSH daemon (instead of FPM). You can find access information on <code>[Instance] &gt; Stack &gt; SSH</code></p>
+<p>Public SSH keys from your AnaxExp profile will be added automatically for all users that have access to an instance. 
+* PHP can be configured with the following <a href="https://github.com/anaxexp/drupal-php#environment-variables">environment variables</a>
+* Available <a href="https://github.com/anaxexp/php#php-extensions">php extensions</a>
+* Composer pre-installed with a default global package <code>hirak/prestissimo:^0.3</code> to download dependencies in parallel </p>
+<h3 id="files-directory-permissions">Files directory permissions<a class="headerlink" href="#files-directory-permissions" title="Permanent link">&para;</a></h3>
+<p>Public files directory (symlink to <code>/mnt/files/public</code>) that used for uploads owned by <code>www-data</code> user (PHP-FPM user) by default and the default container user (<code>anaxexp</code>) has no writing permissions. So if you run a command that creates files in a public directory you will get insufficient permissions error. You can fix this problem by giving writing permissions for files directory to the owner's group (user <code>anaxexp</code> is a member of <code>www-data</code> group) by using one of the <a href="https://github.com/anaxexp/php#helper-scripts">helper scripts</a>:</p>
+<div class="codehilite"><pre><span></span>sudo files_chmod /mnt/files/public
+</pre></div>
+
+<p>For mode details about users and permissions in PHP container see <a href="https://github.com/anaxexp/php#users-and-permissions">https://github.com/anaxexp/php#users-and-permissions</a></p>
+<h3 id="environment-variables">Environment variables<a class="headerlink" href="#environment-variables" title="Permanent link">&para;</a></h3>
 <div class="admonition info">
-<p class="admonition-title">Optional files</p>
-<p>If you don't need to <a href="#running-multiple-projects">run multiple projects</a> and don't use <a href="#docker-for-mac">docker-sync to improve volumes performance on macOS</a> feel free to delete <code>traefik.yml</code> and <code>docker-sync.yml</code> that come with the <code>drupal4docker.tar.gz</code></p>
+<p class="admonition-title">Variables availability</p>
+<p>Environment variables provided by AnaxExp are always available in PHP even if <code>PHP_FPM_CLEAR_ENV</code> set to <code>no</code>. </p>
 </div>
-<div class="admonition success">
-<p class="admonition-title">Get updates</p>
-<p>We release updates to images from time to time, you can find detailed changelog and update instructions on GitHub under <a href="https://github.com/anaxexp/drupal4docker/releases">releases page</a>      </p>
-</div>
-<h2 id="domains">Domains<a class="headerlink" href="#domains" title="Permanent link">&para;</a></h2>
-<p><a href="https://hub.docker.com/_/traefik">Traefik</a> container used for routing. By default, we use port <code>8000</code> to avoid potential conflicts but if port <code>80</code> is free on your host machine just replace traefik's ports definition in the compose file.</p>
-<p>By default <code>BASE_URL</code> set to <code>drupal.docker.localhost</code>, you can change it in <code>.env</code> file.</p>
-<p>Add <code>127.0.0.1 drupal.docker.localhost</code> to your <code>/etc/hosts</code> file (some browsers like Chrome may work without it). Do the same for other default domains you might need from listed below:</p>
+<p>In addition to <a href="../../../infrastructure/env-vars/">global environment variables</a>, we provide the following variables in PHP container that you can use in your <a href="../../../apps/post-deployment-scripts/">post-deployment scripts</a> or settings files:</p>
 <table>
 <thead>
 <tr>
-<th>Service</th>
-<th>Domain</th>
+<th>Variable</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>nginx/apache</code></td>
-<td><code>http://drupal.docker.localhost:8000</code></td>
+<td><code>$APP_ROOT</code></td>
+<td><code>/var/www/html</code> by default</td>
 </tr>
 <tr>
-<td><code>pma</code></td>
-<td><code>http://pma.drupal.docker.localhost:8000</code></td>
+<td><code>$HTTP_ROOT</code></td>
+<td>e.g. <code>/var/www/html/web</code></td>
 </tr>
 <tr>
-<td><code>adminer</code></td>
-<td><code>http://adminer.drupal.docker.localhost:8000</code></td>
+<td><code>$CONF_DIR</code></td>
+<td><code>/var/www/conf</code> by default</td>
 </tr>
 <tr>
-<td><code>mailhog</code></td>
-<td><code>http://mailhog.drupal.docker.localhost:8000</code></td>
+<td><code>$ANAXEXP_APP_NAME</code></td>
+<td>My app</td>
 </tr>
 <tr>
-<td><code>solr</code></td>
-<td><code>http://solr.drupal.docker.localhost:8000</code></td>
+<td><code>$ANAXEXP_HOST_PRIMARY</code></td>
+<td>example.com</td>
 </tr>
 <tr>
-<td><code>nodejs</code></td>
-<td><code>http://nodejs.drupal.docker.localhost:8000</code></td>
+<td><code>$ANAXEXP_URL_PRIMARY</code></td>
+<td><a href="http://example.com">http://example.com</a></td>
 </tr>
 <tr>
-<td><code>node</code></td>
-<td><code>http://front.drupal.docker.localhost:8000</code></td>
-</tr>
-<tr>
-<td><code>varnish</code></td>
-<td><code>http://varnish.drupal.docker.localhost:8000</code></td>
-</tr>
-<tr>
-<td><code>portainer</code></td>
-<td><code>http://portainer.drupal.docker.localhost:8000</code></td>
-</tr>
-<tr>
-<td><code>webgrind</code></td>
-<td><code>http://webgrind.drupal.docker.localhost:8000</code></td>
+<td><code>$ANAXEXP_HOSTS</code></td>
+<td><code>[ &quot;example.com&quot;, &quot;dev.example.org.anaxexp.io&quot; ]</code></td>
 </tr>
 </tbody>
 </table>
-<h2 id="database-import-and-export">Database import and export<a class="headerlink" href="#database-import-and-export" title="Permanent link">&para;</a></h2>
-<h3 id="mariadb">MariaDB<a class="headerlink" href="#mariadb" title="Permanent link">&para;</a></h3>
-<p>See <a href="../../mariadb/#local-environment">MariaDB stack documentation</a></p>
-<h3 id="postgresql">PostgreSQL<a class="headerlink" href="#postgresql" title="Permanent link">&para;</a></h3>
-<p>See <a href="../../postgres/#local-environment">PostgreSQL stack documentation</a></p>
-<h2 id="make-commands">Make commands<a class="headerlink" href="#make-commands" title="Permanent link">&para;</a></h2>
-<p>Basic:</p>
-<p>We provide <code>Makefile</code> that contains commands to simplify the work with your local environment. You can run <code>make [COMMAND]</code> to execute the following commands:</p>
-<div class="codehilite"><pre><span></span>Usage: make COMMAND
-
-Commands:
-    up              Start up all container from the current docker-compose.yml 
-    stop            Stop all containers for the current docker-compose.yml (docker-compose stop) 
-    down            Same as stop
-    prune           Stop and remove containers, networks, images, and volumes (docker-compose down)
-    ps              List container for the current project (docker ps with filter by name)
-    shell           Access PHP container via shell as a default user  (docker exec -ti $CID sh)
-    logs [service]  Show containers logs, use [service] to show logs of specific service
+<p>Deprecated variables:</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Instead use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$ANAXEXP_APP_ROOT</code></td>
+<td><code>$APP_ROOT</code></td>
+</tr>
+<tr>
+<td><code>$ANAXEXP_APP_DOCROOT</code></td>
+<td><code>$HTTP_ROOT</code></td>
+</tr>
+<tr>
+<td><code>$ANAXEXP_CONF</code></td>
+<td><code>$CONF_DIR</code></td>
+</tr>
+<tr>
+<td><code>$ANAXEXP_DIR_CONF</code></td>
+<td><code>$CONF_DIR</code></td>
+</tr>
+<tr>
+<td>Webgrind allows you view and analyze Xdebug profiler output and generate call graphs for visualisation. To use Webgrind first enable Xdebug profiler by adding the following environment variables to your PHP container:</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite"><pre><span></span>PHP_XDEBUG: 1
+PHP_XDEBUG_PROFILER_ENABLE: 1
+PHP_XDEBUG_PROFILER_ENABLE_TRIGGER: 1
+PHP_XDEBUG_PROFILER_ENABLE_TRIGGER_VALUE: 1
 </pre></div>
 
-<p>Drupal-specific:</p>
-<div class="codehilite"><pre><span></span>make drush [command] Execute drush command (runs with -r /var/www/html/web, you can override it via DRUPAL_ROOT=PATH)
-</pre></div>
-
-<h2 id="docker-for-mac">Docker for mac<a class="headerlink" href="#docker-for-mac" title="Permanent link">&para;</a></h2>
-<p>There two major problems macOS users face with when using Docker for mac:</p>
-<h3 id="macos-permissions-issues">macOS permissions issues<a class="headerlink" href="#macos-permissions-issues" title="Permanent link">&para;</a></h3>
-<p>To avoid any permissions issues caused by different user id (uid), group id (gid) between your host and a container use <code>-dev-macos</code> version of php image (uncomment the environment variables in <code>.env</code> files) where the default user <code>anaxexp</code> has <code>501:20</code> uid/gid that matches default macOS user. </p>
-<h3 id="bind-mounts-performance">Bind mounts performance<a class="headerlink" href="#bind-mounts-performance" title="Permanent link">&para;</a></h3>
-<p>Out of the box Docker for mac bind mounts (volumes from host) have poor performance on sync. There are 2 ways how it can  be improved.</p>
-<h4 id="user-guided-caching">User-guided caching<a class="headerlink" href="#user-guided-caching" title="Permanent link">&para;</a></h4>
-<p>Since Docker for Mac 17.06 there's a new native <code>:cached</code> option available for bind mounts. You can find more information about this in <a href="https://blog.docker.com/2017/05/user-guided-caching-in-docker-for-mac">docker blog</a>.</p>
-<p>Replace <em>codebase</em> volume definition of <em>php</em> and <em>nginx</em>/<em>apache</em> services with the option below marked as "User-guided caching". </p>
-<h4 id="docker-sync">Docker-sync<a class="headerlink" href="#docker-sync" title="Permanent link">&para;</a></h4>
-<p><a href="https://github.com/EugenMayer/docker-sync/wiki/Performance-Tests-2017">Performance tests 2017 Docker-sync vs Native</a>.</p>
-<p>The core idea of this project is to use an external volume that will sync your files with a file synchronizer tool.</p>
-<div class="codehilite"><pre><span></span>$ gem install docker-sync
-</pre></div>
-
-<ol>
-<li>Download <code>docker-sync.yml</code> file (inside of <code>x4docker.tar.gz</code> archive) from the latest stable release</li>
-<li>Uncomment <em>docker-sync</em> volume definition in your compose file</li>
-<li>Replace <em>volumes</em> definition of <em>php</em> and <em>nginx</em>/<em>apache</em> services with the option below marked as "Docker-sync".</li>
-<li>Start docker-sync: <code>docker-sync start</code></li>
-<li>In a new shell run after you started docker-sync <code>docker-compose up -d</code></li>
-</ol>
-<p>Now when you change your code on the host machine docker-sync will sync your data to php and nginx/apache containers.</p>
-<p>For more information visit <a href="https://github.com/EugenMayer/docker-sync">docker-sync project page</a>.</p>
-<h2 id="permissions-issues">Permissions issues<a class="headerlink" href="#permissions-issues" title="Permanent link">&para;</a></h2>
-<p>You might have permissions issues caused by non-matching uid/gid on your host machine and the default user in php container.</p>
-<h3 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h3>
-<p>Since version 5.0 the default php container user <code>anaxexp</code> has uid/gid <code>1000</code> that matches the default uid/gid for most popular Linux distributions.  </p>
-<h3 id="macos">macOS<a class="headerlink" href="#macos" title="Permanent link">&para;</a></h3>
-<p><a href="#macos-permissions-issues">Use <code>-dev-macos</code> version</a> of php image where default <code>anaxexp</code> user has <code>501:20</code> uid/gid that matches default macOS user.</p>
-<h3 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h3>
-<p>Since you <a href="https://github.com/docker/for-win/issues/39">can't change owner of mounted volumes</a> in Docker for Win, the only solution is to run everything as root, add the following options to <code>php</code> service in your docker-compose file:</p>
-<div class="codehilite"><pre><span></span>  php:
-    user: root
-    command: &quot;php-fpm -R&quot;
-    environment:
-      PHP_FPM_USER: root
-      PHP_FPM_GROUP: root
-</pre></div>
-
-<h3 id="different-uidgid">Different uid/gid?<a class="headerlink" href="#different-uidgid" title="Permanent link">&para;</a></h3>
-<p>You can rebuild the base image <a href="https://github.com/anaxexp/php">anaxexp/php</a> with custom user/group ids by using docker build arguments <code>ANAXEXP_USER_ID</code>, <code>ANAXEXP_USER_ID</code> (both <code>1000</code> by default)</p>
-<h2 id="running-multiple-projects">Running multiple Projects<a class="headerlink" href="#running-multiple-projects" title="Permanent link">&para;</a></h2>
-<p><a href="https://docs.traefik.io">Træfik</a> is a modern HTTP reverse proxy and load balancer made to deploy microservices with ease.
-To understand the basics of Traefik it is suggested to check Træfik's documentation page: <a href="https://docs.traefik.io/">https://docs.traefik.io/</a></p>
-<p><img src="https://docs.traefik.io/img/internal.png" /></p>
-<p>Image: Multi-domain set-up example
-(Source: traefik.io)</p>
-<p>Steps to set up two projects on one host:</p>
-<ol>
-<li>Create two dirs where you will host two projects. Let's name them <em>site1</em> and <em>site2</em></li>
-<li>Copy <code>docker-compose.yml</code> file to both dirs (<em>site1</em> and <em>site2</em>)</li>
-<li>Download <code>traefik.yml</code> file (inside of <code>tar.gz</code> archive) from the latest stable release to the parent dir where <em>site1</em> and <em>site2</em> dirs are</li>
-<li>Edit <code>traefik.yml</code> and change <code>project1-dir_default</code> to <code>site1_default</code> and <code>project2-dir_default</code> to <code>site2_default</code>. Those are docker networks names that are created automatically from the dir name where docker-compose.yml is located</li>
-<li>Edit site1's <code>docker-compose.yml</code> file. There are 3 main things that need to be done there:<ul>
-<li>In nginx service, under labels, change <code>traefik.backend=nginx</code> to <code>traefik.backend=site1_nginx_1</code>. This is the name of the container. You can see that under NAMES when your have the containers running by executing <code>docker ps</code></li>
-<li>Change <code>traefik.frontend.rule</code> from <code>Host:php.docker.localhost</code> to <code>Host:site1.docker.localhost</code></li>
-<li>Comment out all lines of <code>traefik</code> service at the bottom of the file</li>
-</ul>
-</li>
-<li>Make similar 3 changes in site2's <code>docker-compose.yml</code> file:<ul>
-<li><code>traefik.backend=nginx</code> to <code>traefik.backend=site2_nginx_1</code></li>
-<li><code>Host:php.docker.localhost</code> to <code>Host:site2.docker.localhost</code></li>
-<li>Comment out all lines of <code>traefik</code> service at the bottom of the file</li>
-</ul>
-</li>
-<li>Run <code>docker-compose up -d</code> in <em>site1</em> and <em>site2</em> dirs to spin up containers for both projects</li>
-<li>Run stand-alone traefik <code>docker-compose -f traefik.yml up -d</code> to spin up traefik reverse proxy</li>
-<li>Visit <a href="http://site1.docker.localhost">http://site1.docker.localhost</a> and <a href="http://site2.docker.localhost">http://site2.docker.localhost</a> in your browser</li>
-</ol>
-<p>This set up also works for any Docker projects. You can replace nginx-proxy config with Traefik and get other projects all routed with on traefik container.</p>
+<p>Add <code>XDEBUG_PROFILE=1</code> param to GET or POST request (or set a cookie) you want to profile. Xdebug will generate profile files in <code>/mnt/files/xdebug/profiler</code>. Click Update in Webgrind to access the new information. See <a href="https://xdebug.org/docs/profiler">https://xdebug.org/docs/profiler</a> to learn more about xdebug profiling.</p>
 <div class="admonition warning">
-<p class="admonition-title">For macOS users with docker-sync</p>
-<p>Make sure names of <code>syncs</code> in <code>docker-sync.yml</code> are unique per project. The recommended way is to run a stand-alone docker-sync with syncs definition for all projects. Do not forget to update <code>src</code> paths for projects </p>
+<p class="admonition-title">IMPORTANT</p>
+<p>Xdebug profiling significantly decreases performance and increases resources usage. DO NOT USE it on Production servers.</p>
 </div>
-<p>In case of issues:</p>
-<ul>
-<li>Check <code>docker ps</code> to see which containers are running and check if you have set up all names correctly.</li>
-<li>Check <code>docker network ls</code> to check if the network names are matching.</li>
-<li>Run <code>docker-compose logs -f</code> in site1 or site2 to see the log of each project.</li>
-</ul>
                 
                   
                 
@@ -2071,41 +1811,6 @@ To understand the basics of Traefik it is suggested to check Træfik's documenta
       
         
 <footer class="md-footer">
-    
-    <div class="md-footer-nav">
-        <nav class="md-footer-nav__inner md-grid">
-            
-            <a href="stacks/drupal/containers/" title="Containers" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-                <div class="md-flex__cell md-flex__cell--shrink">
-                    <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-                </div>
-                <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                Previous
-                </span>
-              Containers
-              </span>
-                </div>
-            </a>
-            
-            
-            <a href="stacks/drupal/changelog/" title="Changelog" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-                <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                Next
-                </span>
-              Changelog
-              </span>
-                </div>
-                <div class="md-flex__cell md-flex__cell--shrink">
-                    <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-                </div>
-            </a>
-            
-        </nav>
-    </div>
     
     <div class="md-footer-meta md-typeset">
         <div class="md-footer-meta__inner md-grid">

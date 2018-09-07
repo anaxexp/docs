@@ -36,5 +36,5 @@ A fault tolerant environment has no service interruption but a significantly hig
 ​
 ## Request cluster
 
-Please fill out the application http://go.wod.by/cluster-application
+Please fill out the application http://go.anaxexp.io/cluster-application
 ​

@@ -1652,13 +1652,13 @@ SHA256:XXXXXXXXXXXXX/XXXX.
 Please contact your system administrator. 
 Add correct host key in /Users/xxx/.ssh/known_hosts to get rid of this message. 
 Offending RSA key in /Users/xxx/.ssh/known_hosts:xx 
-RSA host key for [node-xxxxx.wod.by]:xxxx has changed and you have requested strict checking. 
+RSA host key for [node-xxxxx.anaxexp.io]:xxxx has changed and you have requested strict checking. 
 Host key verification failed.
 </pre></div>
 
 <p>This means that the container you're trying connect to was recreated and RSA key has changed.</p>
-<p>To avoid this kind of errors you can disable strict host key checking for *.wod.by host by adding the following lines to <code>~/.ssh/config</code> file: </p>
-<div class="codehilite"><pre><span></span>Host *.wod.by
+<p>To avoid this kind of errors you can disable strict host key checking for *.anaxexp.io host by adding the following lines to <code>~/.ssh/config</code> file: </p>
+<div class="codehilite"><pre><span></span>Host *.anaxexp.io
     StrictHostKeyChecking no
     UserKnownHostsFile=/dev/null
 </pre></div>

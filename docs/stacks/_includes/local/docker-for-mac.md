@@ -24,7 +24,7 @@ The core idea of this project is to use an external volume that will sync your f
 $ gem install docker-sync
 ```
 
-1. Download `docker-sync.yml` file (inside of `docker4x.tar.gz` archive) from the latest stable release
+1. Download `docker-sync.yml` file (inside of `x4docker.tar.gz` archive) from the latest stable release
 2. Uncomment _docker-sync_ volume definition in your compose file
 3. Replace _volumes_ definition of _php_ and _nginx_/_apache_ services with the option below marked as "Docker-sync".
 4. Start docker-sync: `docker-sync start`

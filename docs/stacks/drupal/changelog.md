@@ -1,6 +1,6 @@
 # Drupal stack changelog
 
-This is the changelog for Drupal stack deployed via AnaxExp, for docker4drupal changes see [GitHub releases page](https://github.com/anaxexp/docker4drupal/releases).
+This is the changelog for Drupal stack deployed via AnaxExp, for drupal4docker changes see [GitHub releases page](https://github.com/anaxexp/drupal4docker/releases).
 
 ## 5.1.0
 
@@ -53,7 +53,7 @@ stream_ssl_preread_module
   * Bugfix: iconv implementation missing [anaxexp/php#25](https://github.com/anaxexp/php/issues/25)
 * Vanilla Drupal:
   * **Security update**: 8.5.3
-  * Bugfix: drush cache permission issues [anaxexp/drupal#261](https://github.com/anaxexp/docker4drupal/issues/261)
+  * Bugfix: drush cache permission issues [anaxexp/drupal#261](https://github.com/anaxexp/drupal4docker/issues/261)
 * Drupal node container rebased to [`anaxexp/node`](https://github.com/anaxexp/node) with freezed node version
 * Added Nginx 1.14, patch update for 1.13
 * Nginx's `underscores_in_headers` is now configurable via `$NGINX_UNDERSCORES_IN_HEADERS`
@@ -409,7 +409,7 @@ Downtime 5-10 minutes
 
 ### Changes since 3.x
 
-* All-new revamped docker container images consistent with docker4drupal
+* All-new revamped docker container images consistent with drupal4docker
 * Improved performance of containers
 * Revamped orchestration with better logging and performance
 * Optional services now can be enabled/disabled on the working app
