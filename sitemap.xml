@@ -1,357 +1,357 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>https://anaxexp.github.io/docs/</loc>
+     <loc>https://docs.anaxexp.io/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/billing/</loc>
+     <loc>https://docs.anaxexp.io/billing/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/dev/</loc>
+     <loc>https://docs.anaxexp.io/dev/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/faq/</loc>
+     <loc>https://docs.anaxexp.io/faq/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/status/</loc>
+     <loc>https://docs.anaxexp.io/status/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/support/</loc>
+     <loc>https://docs.anaxexp.io/support/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/troubleshooting/</loc>
+     <loc>https://docs.anaxexp.io/troubleshooting/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/roles/</loc>
+     <loc>https://docs.anaxexp.io/roles/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/apps/new/</loc>
+     <loc>https://docs.anaxexp.io/apps/new/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/apps/instances/</loc>
+     <loc>https://docs.anaxexp.io/apps/instances/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/apps/deploy/</loc>
+     <loc>https://docs.anaxexp.io/apps/deploy/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/apps/domains/</loc>
+     <loc>https://docs.anaxexp.io/apps/domains/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/apps/backups/</loc>
+     <loc>https://docs.anaxexp.io/apps/backups/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/apps/logs/</loc>
+     <loc>https://docs.anaxexp.io/apps/logs/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/apps/post-deployment-scripts/</loc>
+     <loc>https://docs.anaxexp.io/apps/post-deployment-scripts/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/infrastructure/</loc>
+     <loc>https://docs.anaxexp.io/infrastructure/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/infrastructure/connecting-server/</loc>
+     <loc>https://docs.anaxexp.io/infrastructure/connecting-server/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/infrastructure/containers/</loc>
+     <loc>https://docs.anaxexp.io/infrastructure/containers/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/infrastructure/monitoring/</loc>
+     <loc>https://docs.anaxexp.io/infrastructure/monitoring/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/infrastructure/env-vars/</loc>
+     <loc>https://docs.anaxexp.io/infrastructure/env-vars/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/infrastructure/disk/</loc>
+     <loc>https://docs.anaxexp.io/infrastructure/disk/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/infrastructure/maintenance/</loc>
+     <loc>https://docs.anaxexp.io/infrastructure/maintenance/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/infrastructure/security/</loc>
+     <loc>https://docs.anaxexp.io/infrastructure/security/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/infrastructure/hsts/</loc>
+     <loc>https://docs.anaxexp.io/infrastructure/hsts/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/infrastructure/ufw/</loc>
+     <loc>https://docs.anaxexp.io/infrastructure/ufw/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/infrastructure/cli/</loc>
+     <loc>https://docs.anaxexp.io/infrastructure/cli/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/</loc>
+     <loc>https://docs.anaxexp.io/stacks/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/config/</loc>
+     <loc>https://docs.anaxexp.io/stacks/config/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/template/</loc>
+     <loc>https://docs.anaxexp.io/stacks/template/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/maintenance/</loc>
+     <loc>https://docs.anaxexp.io/stacks/maintenance/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/drupal/</loc>
+     <loc>https://docs.anaxexp.io/stacks/drupal/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/drupal/containers/</loc>
+     <loc>https://docs.anaxexp.io/stacks/drupal/containers/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/drupal/local/</loc>
+     <loc>https://docs.anaxexp.io/stacks/drupal/local/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/drupal/changelog/</loc>
+     <loc>https://docs.anaxexp.io/stacks/drupal/changelog/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/wordpress/</loc>
+     <loc>https://docs.anaxexp.io/stacks/wordpress/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/wordpress/containers/</loc>
+     <loc>https://docs.anaxexp.io/stacks/wordpress/containers/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/wordpress/local/</loc>
+     <loc>https://docs.anaxexp.io/stacks/wordpress/local/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/wordpress/changelog/</loc>
+     <loc>https://docs.anaxexp.io/stacks/wordpress/changelog/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/php/</loc>
+     <loc>https://docs.anaxexp.io/stacks/php/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/php/containers/</loc>
+     <loc>https://docs.anaxexp.io/stacks/php/containers/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/php/local/</loc>
+     <loc>https://docs.anaxexp.io/stacks/php/local/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/gitlab/</loc>
+     <loc>https://docs.anaxexp.io/stacks/gitlab/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/gitlab/changelog/</loc>
+     <loc>https://docs.anaxexp.io/stacks/gitlab/changelog/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/html/</loc>
+     <loc>https://docs.anaxexp.io/stacks/html/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/matomo/</loc>
+     <loc>https://docs.anaxexp.io/stacks/matomo/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/cachet/</loc>
+     <loc>https://docs.anaxexp.io/stacks/cachet/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/mariadb/</loc>
+     <loc>https://docs.anaxexp.io/stacks/mariadb/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/postgres/</loc>
+     <loc>https://docs.anaxexp.io/stacks/postgres/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/solr/</loc>
+     <loc>https://docs.anaxexp.io/stacks/solr/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/solr-drupal/</loc>
+     <loc>https://docs.anaxexp.io/stacks/solr-drupal/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/opensmtpd/</loc>
+     <loc>https://docs.anaxexp.io/stacks/opensmtpd/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/elasticsearch/</loc>
+     <loc>https://docs.anaxexp.io/stacks/elasticsearch/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/athenapdf/</loc>
+     <loc>https://docs.anaxexp.io/stacks/athenapdf/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/redis/</loc>
+     <loc>https://docs.anaxexp.io/stacks/redis/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/varnish/</loc>
+     <loc>https://docs.anaxexp.io/stacks/varnish/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/jenkins/</loc>
+     <loc>https://docs.anaxexp.io/stacks/jenkins/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/docker-registry/</loc>
+     <loc>https://docs.anaxexp.io/stacks/docker-registry/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/stacks/slackin/</loc>
+     <loc>https://docs.anaxexp.io/stacks/slackin/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/integrations/aws/</loc>
+     <loc>https://docs.anaxexp.io/integrations/aws/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/integrations/azure/</loc>
+     <loc>https://docs.anaxexp.io/integrations/azure/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/integrations/bitbucket/</loc>
+     <loc>https://docs.anaxexp.io/integrations/bitbucket/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/integrations/cloudflare/</loc>
+     <loc>https://docs.anaxexp.io/integrations/cloudflare/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/integrations/digitalocean/</loc>
+     <loc>https://docs.anaxexp.io/integrations/digitalocean/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/integrations/docker-registry/</loc>
+     <loc>https://docs.anaxexp.io/integrations/docker-registry/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/integrations/gcp/</loc>
+     <loc>https://docs.anaxexp.io/integrations/gcp/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/integrations/github/</loc>
+     <loc>https://docs.anaxexp.io/integrations/github/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/integrations/gitlab/</loc>
+     <loc>https://docs.anaxexp.io/integrations/gitlab/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/integrations/linode/</loc>
+     <loc>https://docs.anaxexp.io/integrations/linode/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/integrations/sendgrid/</loc>
+     <loc>https://docs.anaxexp.io/integrations/sendgrid/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/integrations/custom/</loc>
+     <loc>https://docs.anaxexp.io/integrations/custom/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://anaxexp.github.io/docs/cluster/</loc>
+     <loc>https://docs.anaxexp.io/cluster/</loc>
      <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
